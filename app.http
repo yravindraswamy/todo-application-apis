@@ -1,15 +1,15 @@
-
 GET http://localhost:3000/todos/
 
 ###
-GET http://localhost:3000/todos/?category=HOME
+
+GET http://localhost:3000/todos/?category=ravindra
 
 ###
-GET http://localhost:3000/todos/4/
+
+GET http://localhost:3000/todos/5/
 
 ###
-
-GET http://localhost:3000/agenda/?date=2021-3-1
+GET http://localhost:3000/agenda/?date=2021-2-22
 
 ###
 
@@ -19,18 +19,17 @@ Content-Type: application/json
 {
   "id": 6,
   "todo": "Finalize event theme",
-  "priority": "LOW",
+  "priority": "Ravindra",
   "status": "TO DO",
   "category": "HOME",
-  "dueDate": "2021-02-22"
+  "dueDate": "2021-2-22"
 }
+
 ###
+
 PUT http://localhost:3000/todos/5/
 Content-Type: application/json
 
 {
-  "dueDate": "2021-01-12"
+    "dueDate":"2021-2-22"
 }
-
-###
-DELETE http://localhost:3000/todos/6/
